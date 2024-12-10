@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <header>
+    <!-- Header -->
+    <header style="position: sticky; top: 0; left: 0; width: 100%; background-color: rgba(0, 51, 153, 0.9); padding: 1em 2em; display: flex; align-items: center; justify-content: space-between; z-index: 1000; box-sizing: border-box;">
         <a href="../index.html" class="logo">
-            <img src="../assets/WideAccel Logo.png" alt="WideAccel Logo">
+            <img src="../assets/WideAccel Logo.png" alt="WideAccel Logo" style="height: 40px; width: auto; border-radius: 15px;">
         </a>
         <nav>
             <a href="../index.html">Home</a>
@@ -17,11 +18,34 @@
             <a href="services.html">Services</a>
             <a href="contact.html">Contact</a>
         </nav>
-        </nav>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <p>Contact details for WideAccel.</p>
+
+    <!-- Hero Section -->
+    <section class="hero" style="position: relative; height: 40vh; background: url('../assets/contact-semihero.jpg') center/cover no-repeat;">
+        <!-- Overlay -->
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 51, 153, 0.6); z-index: 1;"></div>
+        <!-- Content -->
+        <div style="position: relative; z-index: 2; color: white; text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;">
+            <h1 style="font-size: 4em; margin: 0;">Contact Us</h1>
+            <p style="margin: 1em 0 0; font-size: 1.2em;">We're here to help. Reach out to WideAccel today!</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main style="padding: 2em;">
+        <h2 style="text-align: left; font-size: 2.2em; color: #003399; margin-bottom: 1em;">Get in Touch</h2>
+        <p style="font-size: 1.1em; line-height: 1.8; color: #555;">
+            Whether you have a question about our services, need support, or just want to connect, we'd love to hear from you. Use the contact information below to reach out to our team.
+        </p>
+        <ul style="list-style: none; padding: 0; margin-top: 1.5em; font-size: 1.1em; color: #333;">
+            <li><strong>Email:</strong> sale@wideaccel.com</li>
+            <li><strong>Address:</strong> 6th Room 4801, 48/F, HOPEWELL CTR, 183 QUEEN'S RD WEST, WAN CHAI, Hong Kong</li>
+        </ul>
     </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #003399; color: white; text-align: center; padding: 1em; margin-top: 2em;">
+        <p>&copy; 2024 WideAccel Communication Co. All rights reserved.</p>
+    </footer>
 </body>
 </html>

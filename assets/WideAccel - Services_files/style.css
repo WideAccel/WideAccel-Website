@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 22px; /* Larger font size as requested by supervisor */
+    font-size: 20px; /* Larger font size as requested by supervisor */
 }
 
 header {
@@ -181,7 +181,7 @@ section {
 footer {
     background-color: #003399;
     color: white;
-    text-align: left;
+    text-align: center;
     padding: 1em;
     margin-top: 2em;
 }
