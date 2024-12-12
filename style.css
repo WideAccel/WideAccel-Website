@@ -32,6 +32,89 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em; /* Increase spacing between items */
+}
+
+/* Reset styles */
+header nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px; /* Larger font size */
+    font-weight: bold; /* Make the font bolder for better visibility */
+    transition: color 0.3s ease;
+    text-align: center; /* Ensure text alignment */
+}
+  
+header nav a:hover {
+    color: #FFD700; /* Highlight color on hover */
+}
+  
+  /* Dropdown container */
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    z-index: 1000;
+    min-width: 200px;
+    top: 100%;
+    left: 50%; /* Center the dropdown menu */
+    transform: translateX(-50%);
+}
+  
+  
+/* Dropdown menu items */
+.dropdown-menu li {
+border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:last-child {
+border-bottom: none;
+}
+
+.dropdown-menu a {
+display: block;
+padding: 10px 16px;
+color: #333;
+text-decoration: none;
+font-size: 16px;
+transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effects */
+.dropdown-menu a:hover {
+background-color: #f1f1f1;
+color: #007BFF;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+display: block;
+}
+
+/* Header styling for logo */
+.logo img {
+transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+transform: scale(1.1);
+}
+   
+
 .hero {
     background: url('assets/hero-background.jpg') center/cover no-repeat;
     color: white;

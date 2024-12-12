@@ -11,13 +11,32 @@
         <a href="index.html" class="logo">
             <img src="assets/WideAccel Logo.png" alt="WideAccel Company Logo" style="height: 40px; width: auto; border-radius: 15px;">
         </a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="pages/company.html">Company</a>
-        <a href="pages/services.html">Services</a>
-        <a href="pages/contact.html">Contact</a>
-    </nav>
-</header>
+        <nav style="display: flex; gap: 2em; position: relative;">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <a href="pages/company.html">Company</a>
+                <ul class="dropdown-menu">
+                    <li><a href="pages/company-profile.html">Company Profile</a></li>
+                    <li><a href="pages/our-team.html">Our Team</a></li>
+                    <li><a href="pages/past-projects.html">Past Projects</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a href="pages/services.html">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="pages/internet.html">Internet</a></li>
+                    <li><a href="pages/iplc.html">IPLC</a></li>
+                    <li><a href="pages/dplc.html">DPLC</a></li>
+                    <li><a href="pages/hk-backhaul.html">Hong Kong BackHaul Service</a></li>
+                    <li><a href="pages/ict.html">ICT</a></li>
+                    <li><a href="pages/customer-service.html">24-Hour Customer Service</a></li>
+                </ul>
+            </div>
+            <a href="pages/contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    
     <section class="hero" style="background: linear-gradient(rgba(0, 51, 153, 0.7), rgba(255, 215, 0, 0.7)), url('assets/hero-background.jpg') center/cover no-repeat;">
     <div class="hero-content" style="text-align: center; margin-top: -6em;">
         <h1 style="font-size: 4em;">Connecting Southeast Asia and Beyond</h1>
