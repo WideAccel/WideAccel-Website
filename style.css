@@ -200,13 +200,13 @@ section {
     }
 }
 
-@media (min-aspect-ratio: 3/2) and (max-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 3/2) and (max-aspect-ratio: 21/9) {
     .service-list {
         grid-template-columns: repeat(3, 1fr); /* Three columns for wider screens */
     }
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 21/9) {
     .service-list {
         grid-template-columns: repeat(6, 1fr); /* Six columns for ultra-wide screens */
     }
