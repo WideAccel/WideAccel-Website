@@ -3,26 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>WideAccel - Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="position: sticky; top: 0; left: 0; width: 100%; background-color: rgba(0, 51, 153, 0.9); padding: 1em 2em; display: flex; align-items: center; justify-content: space-between; z-index: 1000; box-sizing: border-box;">
+    <header style="position: sticky; top: 0; left: 0; width: 100%; background-color: rgba(0, 51, 153, 0.9); padding: 1em 2em; display: flex; align-items: center; justify-content: space-between; z-index: 1000; box-sizing: border-box;"> 
         <a href="index.html" class="logo">
             <img src="assets/WideAccel Logo.png" alt="WideAccel Company Logo" style="height: 40px; width: auto; border-radius: 15px;">
         </a>
         <nav style="display: flex; gap: 2em; position: relative;">
             <a href="index.html">Home</a>
-            <div class="dropdown">
-                <a href="pages/company.html">Company</a>
+            <!-- Dropdown for Company -->
+            <div class="dropdown" style="position: relative;">
+                <a href="pages/company.html" style="display: flex; align-items: center; gap: 0.3em;">
+                    Company <span style="font-size: 0.8em;">▼</span>
+                </a>
                 <ul class="dropdown-menu">
                     <li><a href="pages/company-profile.html">Company Profile</a></li>
                     <li><a href="pages/our-team.html">Our Team</a></li>
                     <li><a href="pages/past-projects.html">Past Projects</a></li>
                 </ul>
             </div>
-            <div class="dropdown">
-                <a href="pages/services.html">Services</a>
+            <!-- Dropdown for Services -->
+            <div class="dropdown" style="position: relative;">
+                <a href="pages/services.html" style="display: flex; align-items: center; gap: 0.3em;">
+                    Services <span style="font-size: 0.8em;">▼</span>
+                </a>
                 <ul class="dropdown-menu">
                     <li><a href="pages/internet.html">Internet</a></li>
                     <li><a href="pages/iplc.html">IPLC</a></li>
@@ -34,8 +40,7 @@
             </div>
             <a href="pages/contact.html">Contact</a>
         </nav>
-    </header>
-    
+    </header>    
     
     <section class="hero" style="background: linear-gradient(rgba(0, 51, 153, 0.7), rgba(255, 215, 0, 0.7)), url('assets/hero-background.jpg') center/cover no-repeat;">
     <div class="hero-content" style="text-align: center; margin-top: -6em;">

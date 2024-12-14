@@ -8,6 +8,11 @@ body {
     font-size: 22px; /* Larger font size as requested by supervisor */
 }
 
+.logo img {
+    height: 40px;
+    width: auto;
+}
+/* Header styles */
 header {
     background-color: #003399;
     color: white;
@@ -16,49 +21,28 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-.logo img {
-    height: 40px;
-    width: auto;
-}
+
 nav {
     display: flex;
     gap: 1.5em;
 }
+
 nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
+
 nav a:hover {
     text-decoration: underline;
+    color: #FFD700; /* Gold highlight on hover */
 }
 
-header nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3em; /* Increase spacing between items */
-}
-
-/* Reset styles */
-header nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 24px; /* Larger font size */
-    font-weight: bold; /* Make the font bolder for better visibility */
-    transition: color 0.3s ease;
-    text-align: center; /* Ensure text alignment */
-}
-  
-header nav a:hover {
-    color: #FFD700; /* Highlight color on hover */
-}
-  
-  /* Dropdown container */
+/* Dropdown container */
 .dropdown {
     position: relative;
 }
-  
+
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -69,40 +53,56 @@ header nav a:hover {
     list-style-type: none;
     margin: 0;
     z-index: 1000;
-    min-width: 200px;
     top: 100%;
-    left: 50%; /* Center the dropdown menu */
-    transform: translateX(-50%);
+    left: 0;
+    min-width: 200px;
 }
-  
-  
+
 /* Dropdown menu items */
 .dropdown-menu li {
-border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 .dropdown-menu li:last-child {
-border-bottom: none;
+    border-bottom: none;
 }
 
 .dropdown-menu a {
-display: block;
-padding: 10px 16px;
-color: #333;
-text-decoration: none;
-font-size: 16px;
-transition: background-color 0.3s ease, color 0.3s ease;
+    display: block;
+    padding: 10px 16px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Hover effects */
 .dropdown-menu a:hover {
-background-color: #f1f1f1;
-color: #007BFF;
+    background-color: #f1f1f1;
+    color: #007BFF; /* Blue hover color for dropdown items */
 }
 
 /* Show dropdown on hover */
 .dropdown:hover .dropdown-menu {
-display: block;
+    display: block;
+}
+
+/* Add hover effect for dropdown arrow */
+.dropdown span {
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover span {
+    transform: rotate(180deg); /* Rotate arrow when hovered */
+}
+
+/* Header logo hover effect */
+.logo img {
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1);
 }
 
 /* Header styling for logo */
@@ -312,4 +312,44 @@ footer {
     border-top: 1px solid #FFD700;
     padding-top: 1em;
     font-size: 0.8em;
+}
+
+/* Flip card container */
+.flip-card {
+    perspective: 1000px;
+}
+
+/* Flip card inner */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Ensure equal size for both sides */
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* On hover, flip the card */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+/* Back side rotation */
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Card height consistency */
+.flip-card {
+    height: 350px; /* Set height for the entire card container */
 }

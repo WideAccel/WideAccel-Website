@@ -7,18 +7,41 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header style="position: sticky; top: 0; left: 0; width: 100%; background-color: rgba(0, 51, 153, 0.9); padding: 1em 2em; display: flex; align-items: center; justify-content: space-between; z-index: 1000; box-sizing: border-box;">
-        <a href="../index.html" class="logo">
-            <img src="../assets/WideAccel Logo.png" alt="WideAccel Logo" style="height: 40px; width: auto; border-radius: 15px;">
-        </a>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="company.html">Company</a>
-            <a href="services.html">Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+<!-- Header -->
+<header style="position: sticky; top: 0; left: 0; width: 100%; background-color: rgba(0, 51, 153, 0.9); padding: 1em 2em; display: flex; align-items: center; justify-content: space-between; z-index: 1000; box-sizing: border-box;"> 
+    <a href="../index.html" class="logo">
+        <img src="../assets/WideAccel Logo.png" alt="WideAccel Company Logo" style="height: 40px; width: auto; border-radius: 15px;">
+    </a>
+    <nav style="display: flex; gap: 2em; position: relative;">
+        <a href="../index.html">Home</a>
+        <!-- Dropdown for Company -->
+        <div class="dropdown" style="position: relative;">
+            <a href="./company.html" style="display: flex; align-items: center; gap: 0.3em;">
+                Company <span style="font-size: 0.8em;">▼</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="./company-profile.html">Company Profile</a></li>
+                <li><a href="./our-team.html">Our Team</a></li>
+                <li><a href="./past-projects.html">Past Projects</a></li>
+            </ul>
+        </div>
+        <!-- Dropdown for Services -->
+        <div class="dropdown" style="position: relative;">
+            <a href="./services.html" style="display: flex; align-items: center; gap: 0.3em;">
+                Services <span style="font-size: 0.8em;">▼</span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="./internet.html">Internet</a></li>
+                <li><a href="./iplc.html">IPLC</a></li>
+                <li><a href="./dplc.html">DPLC</a></li>
+                <li><a href="./hk-backhaul.html">Hong Kong BackHaul Service</a></li>
+                <li><a href="./ict.html">ICT</a></li>
+                <li><a href="./customer-service.html">24-Hour Customer Service</a></li>
+            </ul>
+        </div>
+        <a href="./contact.html">Contact</a>
+    </nav>
+</header> 
 
     <!-- Hero Section -->
     <section class="hero" style="position: relative; height: 40vh; background: url('../assets/contact-semihero.jpg') center/cover no-repeat;">
